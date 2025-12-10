@@ -1,0 +1,109 @@
+/* style.css */
+
+/* Pengaturan Dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e8; /* Coklat muda/Krem untuk latar belakang halaman */
+    color: #4b3832; /* Teks coklat tua */
+}
+
+header {
+    background-color: #795548; /* Coklat sedang untuk Header */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer; /* Menandakan bisa di-klik */
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: #5d4037; /* Coklat lebih tua saat di hover */
+}
+
+h1#nama-website {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+/* Pengaturan Konten Detail */
+main#konten-detail {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e0d8c2; /* Coklat muda lembut untuk kontainer utama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Menyembunyikan konten awal */
+.tersembunyi {
+    display: none;
+}
+
+/* Judul Utama */
+section h2 {
+    color: #4e342e; /* Coklat sangat tua */
+    border-bottom: 3px solid #795548;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* Kategori Budaya/Energi */
+.kategori h3 {
+    background-color: #a1887f; /* Coklat keabuan untuk latar belakang kategori */
+    color: white;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+/* Konten Item (Tradisi, Kuliner, dll.) */
+.konten-item {
+    background-color: #d7ccc8; /* Coklat muda sangat terang untuk setiap item */
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #6d4c41; /* Garis vertikal coklat */
+    border-radius: 4px;
+}
+
+.konten-item h4 {
+    color: #4e342e;
+    margin-top: 0;
+    border-bottom: 1px dashed #bcaaa4;
+    padding-bottom: 5px;
+}
+
+/* Pengertian dan Sejarah DIPISAH */
+.pengertian {
+    font-weight: bold;
+    color: #3e2723; /* Teks pengertian lebih gelap */
+    line-height: 1.6;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #a1887f;
+    padding-bottom: 5px;
+}
+
+.sejarah {
+    font-style: italic;
+    color: #6d4c41; /* Teks sejarah lebih keabuan */
+    line-height: 1.5;
+}
+
+/* Responsive Sederhana */
+@media (max-width: 768px) {
+    main#konten-detail {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1#nama-website {
+        font-size: 1.8em;
+    }
+}
